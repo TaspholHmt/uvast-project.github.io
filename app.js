@@ -139,3 +139,49 @@ function vast() {
     }
 }
 
+function uvas() { //no"t"
+    if(u == "?"){
+        v = Number(v)
+        a = Number(a)
+        s = Number(s) 
+
+        result1 = -Math.sqrt((-2*a*s) + Math.pow(v, 2))
+        result2 = Math.sqrt((-2*a*s) + Math.pow(v, 2))
+
+        if(result1 >= 0){
+            result = "u = " + String(result1) + "m/s :(uvas, u.1)"
+        }                                                     
+        else if(result2 >= 0) {
+            result = "u = " + String(result2) + "m/s :(uvas, u.2)"
+        }else{
+            result = "Error (uvas, u)"
+        }
+    }else if(v == "?"){
+        v = Number(v)
+        a = Number(a)
+        s = Number(s) 
+        result1 = -Math.sqrt(Math.pow(u, 2) + 2*a*s)
+        result2 = Math.sqrt(Math.pow(u, 2) + 2*a*s)
+        if(result1 >= 0){
+            result = "v = " + String(result1) + "m/s :(uvas, v.1)"
+        }else if(result2 >= 0){
+            result = "v = " + String(result2) + "m/s :(uvas, v.2)"
+        }else{
+            result = "Error (uvas, v)"        }
+    }
+    else if(a == "?"){
+        u = Number(u)
+        v = Number(v)
+        s = Number(s)
+        result = "a = " + String((Math.pow(v, 2) - (Math.pow(u, 2)))/(2*s)) + " m/s<sup>2</sup> :(uvas, a)"
+    }
+    else if(s == "?"){
+        u = Number(u)
+        v = Number(v)
+        a = Number(a)
+        result = "s = " + String((Math.pow(v, 2) - (Math.pow(u, 2)))/(2*a)) + " m :(uvas, s)"
+    }
+    else{
+        result = "ERROR (uvas)"
+    }
+}
