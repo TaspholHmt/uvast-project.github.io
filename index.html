@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+        <h2>โปรแกรมคำนวณสูตรการเคลื่อนที่แบบความเร่งคงที่</h2>
+        <hr>
+        <h3>*จำนวนเต็มหรือทศนิยมเท่านั้น*</h3>
+        <h3>*พิมพ์ - เมื่อโจทย์ไม่มีค่านั้น*</h3>
+        <h3>*พิมพ์ ? เมื่อไม่ทราบค่านั้น*</h3>
+        <div>
+            <label for="u">ความเร็วต้น(u) :</label>
+            <input type="text" id="u" placeholder="m/s" required>
+        </div>
+        <div>
+            <label for="v">ความปลาย(v) :</label>
+            <input type="text" id="v" placeholder="m/s" required>
+        </div>
+        <div>
+            <label for="a">ความเร่ง(a,g) :</label>
+            <input type="text" id="a" placeholder="m/s^2" required>
+        </div>
+        <div>
+            <label for="s">การกระจัด(s) :</label>
+            <input type="text" id="s" placeholder="m" required>
+        </div>
+        <div>
+            <label for="t">เวลา(t) :</label>
+            <input type="text" id="t" placeholder="s" required>
+        </div>
+            <button type="reset">RESET</button>
+            <button type="button" onclick="main()">SUBMIT</button>
+        <h2 id="result"></h2>
+    </form>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
