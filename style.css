@@ -80,8 +80,12 @@ button[type="button"]:hover {
     color: #007bff;
 }
 
-h2, h3 {
-    font-size: 22px;
+h2 {
+    font-size: 1.6rem;
     color: #333;
 }
 
+h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
