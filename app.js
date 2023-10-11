@@ -185,3 +185,59 @@ function uvas() { //no"t"
         result = "ERROR (uvas)"
     }
 }
+
+function uvat() {
+    if (u == "?") {
+        v = Number(v)
+        a = Number(a)
+        t = Number(t)
+        result = "u = " + String(v - a*t) + " m/s :(uvat, u)"
+    }
+    else if (v == "?") {
+        u = Number(u)
+        a = Number(a)
+        t = Number(t)
+        result = "v = " + String(u + a*t) + " m/s :(uvat, v)"
+    }
+    else if (a == "?") {
+        u = Number(u)
+        v = Number(v)
+        t = Number(t)
+        result = "a = " + String((v-u)/t) + " m/s<sup>2</sup> :(uvat, a)"
+    }
+    else if (t == "?") {
+        u = Number(u)
+        v = Number(v)
+        a = Number(a)
+        result = "t = " + String((v-u)/a) + " s :(uvat, t)"
+    }
+}
+
+function uvst() {
+    if (u == "?") {
+        v = Number(v)
+        s = Number(s)
+        t = Number(t)
+        result = "u = " + String(((2*s)-(t*v))/t) + " m/s :(uvst, u)"
+    }
+    else if (v == "?" ){
+        u = Number(u)
+        s = Number(s)
+        t = Number(t)
+        result = "v = " + String(((2*s)-(t*u))/t) + " m/s :(uvst, v)"
+    }
+    else if (s == "?"){
+        u = Number(u)
+        v = Number(v)
+        t = Number(t)
+        result = "s = " + String(((u+v)/2)*t) + " m :(uvst, s)"
+    }
+    else if (t == "?") {
+        u = Number(u)
+        v = Number(v)
+        s = Number(s)
+        result = "t = " + String((2*s)/(u+v)) + " s:(uvst, t)"
+    }else{
+        result = "ERROR (uvst)"
+    }
+}
