@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: large;
+    font-size: 18px;
 }
 
 /* Set a background color for the whole page */
@@ -77,4 +77,11 @@ button[type="button"]:hover {
 #result {
     font-size: 18px;
     margin-top: 20px;
+    color: #007bff;
 }
+
+h2, h3 {
+    font-size: 22px;
+    color: #333;
+}
+
