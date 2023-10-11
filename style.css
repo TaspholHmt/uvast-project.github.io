@@ -35,13 +35,14 @@ label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 input {
     width: 100%;
-    padding: 15px; /* Increased padding for larger input boxes */
+    padding: 17px; /* Increased padding for larger input boxes */
     margin-bottom: 20px; /* Increased margin for larger input boxes */
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 5px;
     font-size: larger; /* Larger font size for input text */
 }
@@ -58,6 +59,7 @@ button[type="reset"], button[type="button"] {
 
 button[type="reset"] {
     background-color: #ccc;
+    color:#333;
 }
 
 button[type="button"] {
@@ -88,4 +90,8 @@ h2 {
 h3 {
     font-size: 1.2rem;
     color: #333;
+}
+
+hr{
+    border: 1.5px solid #ccc;
 }
